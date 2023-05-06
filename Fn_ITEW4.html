@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Section -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+          <div class="nav-icons">
+              <a href="https://www.facebook.com/joyie.patootie"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/imjoyiiieee?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@shanaiah_luna?_t=8c4lgRbRaM5&_r=1"><i class="fab fa-tiktok"></i></a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+<script>
+  $(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-nav").addClass("navbar-nav-hidden");
+    } else {
+        $(".navbar-nav").removeClass("navbar-nav-hidden");
+    }
+});
+
+</script>
+
+<!-- Header Section -->
+<header class="header-section" id="header-section">
+  <div class="header-overlay"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="header-content">
+                  <h1>Hello! I am Joy</h1>
+                  <div class="tagline">Web Developer</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+
+<!-- About Me Section -->
+<section class="about-me-section" id="about-me">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="img/profile.jpg" alt="Profile Picture">
+            </div>
+            <div class="col-lg-8">
+                <p>Hey there, my name is Joy Balsomo, and I'm a 3rd year BSIT college student studying at 
+                  Pamantasan ng Cabuyao. I have a passion for web design and love creating beautiful and 
+                  functional websites. As a student, I'm constantly learning and honing my skills to be the 
+                  best web designer I can be. My mission is to help businesses and individuals build their 
+                  online presence and reach their goals through innovative and effective web design. 
+                  By providing high-quality web design services, I aim to make a positive impact on the online 
+                  community and help my clients achieve success. </p>
+                  <p>Thank you for taking the time to learn more 
+                    about me and my work.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Portfolio</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpeg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Noir Nights</h4>
+            <p class="text-muted">Illustration</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Wild Visions</h4>
+            <p class="text-muted">Photography</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpeg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Digital Dynamos</h4>
+            <p class="text-muted">Web Development</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Contact</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Get in Touch</h3>
+          <p>Feel free to drop me a line via email or connect with me on social media.</p>
+          <form id="contact-form" method="post" action="#">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Your Message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div id="message"></div>
+        </div>
+        <div class="col-md-6">
+          <h3>Contact Details</h3>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@pnc.com">info@pnc.com</a></li>
+            <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Suite 200, New York, NY 10001</li>
+          </ul>
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=new%20york%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/maps/83"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+  $(document).ready(function() {
+    // Send message via AJAX
+    $('#contact-form').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: 'send-message.php',
+        data: $(this).serialize(),
+        success: function(response) {
+          $('#message').html(response).fadeIn();
+        },
+        error: function(response) {
+          $('#message').html(response).fadeIn();
+        }
+      });
+    });
+  });
+  </script>
+
+  <!-- Footer Section -->
+  <footer class="bg-light text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company Bio</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+      
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+      
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 4</a>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Links</h5>
+      
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <a class="text-dark" href="#">Privacy Policy</a>
+        |
+        <a class="text-dark" href="#">Terms & Conditions</a>
+        |
+        <a class="text-dark" href="#">Contact</a>
+        <br />
+        <small class="text-muted">
+          © 2023 Your Company. All Rights Reserved.
+        </small>
+      </div>
+  </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.3.1/dist/simpleParallax.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+  </html>        
