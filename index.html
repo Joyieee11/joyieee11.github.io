@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+
+
 </head>
 <body>
 
 <!-- Navigation Section -->
-<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
   <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Portfolio</a>
+      <a class="navbar-brand" href="#">PixelPulse</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,7 +27,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+                <a class="nav-link" aria-current="page" href="#header">Top</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about-me">About</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -42,54 +48,50 @@
   </div>
 </nav>
 
-<script>
-  $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-nav").addClass("navbar-nav-hidden");
-    } else {
-        $(".navbar-nav").removeClass("navbar-nav-hidden");
-    }
-});
-
-</script>
-
 <!-- Header Section -->
-<header class="header-section" id="header-section">
+<header class="header-section animated" id="header">
   <div class="header-overlay"></div>
   <div class="container">
-      <div class="row">
-          <div class="col-lg-12">
-              <div class="header-content">
-                  <h1>Hello! I am Joy</h1>
-                  <div class="tagline">Web Developer</div>
-              </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="header-content">
+          <div class="logo">
+            <img src="Logo1.png" width="350px" height="150px" alt="Pixel Pulse Logo">
           </div>
+        </div>
       </div>
+      <div class="col-lg-8">
+        <div class="header-content">
+          <h1 class="wow animate__animated animate__fadeInLeft">"Unleash the power of pixels and code. </h1>
+          <h1 class="wow animate__animated animate__fadeInLeft">Transform ideas into captivating web experiences."</h1>
+          <div class="tagline wow animate__animated animate__fadeInUp animate__delay-1s">Hi there! Welcome to my website</div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
+
 <!-- About Me Section -->
-<section class="about-me-section" id="about-me">
+<section class="about-me-section animated" id="about-me">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h2>About Me</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <img src="img/profile.jpg" alt="Profile Picture">
+            <div class="col-lg-12 wow animate__animated animate__fadeInDown">
+              <h2>About Me</h2>
             </div>
             <div class="col-lg-8">
-                <p>Hey there, my name is Joy Balsomo, and I'm a 3rd year BSIT college student studying at 
+                <p class="wow animate__animated animate__fadeInLeft">Hey there, my name is Joy Balsomo, and I'm a 3rd year BSIT college student studying at 
                   Pamantasan ng Cabuyao. I have a passion for web design and love creating beautiful and 
                   functional websites. As a student, I'm constantly learning and honing my skills to be the 
-                  best web designer I can be. My mission is to help businesses and individuals build their 
+                  best web designer I can be. </p>
+                <p class="wow animate__animated animate__fadeInLeft">My mission is to help businesses and individuals build their 
                   online presence and reach their goals through innovative and effective web design. 
                   By providing high-quality web design services, I aim to make a positive impact on the online 
-                  community and help my clients achieve success. </p>
-                  <p>Thank you for taking the time to learn more 
-                    about me and my work.</p>
+                  community and help my clients achieve success. Thank you for taking the time to learn more 
+                  about me and my work.</p>
+            </div>
+            <div class="col-lg-4">
+              <img src="img/profile.jpg" alt="Profile Picture">
             </div>
         </div>
     </div>
@@ -97,59 +99,61 @@
 
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio-section">
-    <div class="container">
+  <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2>Portfolio</h2>
-          <hr>
-        </div>
+          <div class="col-lg-12 text-center">
+              <h2 class="wow animate__animated animate__fadeInDown">Portfolio</h2>
+              <hr>
+          </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                  <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                  </div>
+                  <img class="img-fluid" src="img/portfolio/01-thumbnail.jpeg" alt="">
+              </a>
+              <div class="portfolio-caption">
+                  <h4 class="wow animate__animated animate__fadeInUp">Noir Nights</h4>
+                  <p class="wow animate__animated animate__fadeInUp">Illustration</p>
               </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpeg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Noir Nights</h4>
-            <p class="text-muted">Illustration</p>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                  <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                  </div>
+                  <div class="video-container" style="height: 200px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1wfeqDyMUx4" frameborder="0" allowfullscreen></iframe>
+                  </div>
+            </a>
+            <div class="portfolio-caption">
+                <h4 class="wow animate__animated animate__fadeInUp">Pixel Perfect</h4>
+                <p class="wow animate__animated animate__fadeInUp">Tech Tips and Tricks</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                  <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                  </div>
+                  <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+              </a>
+              <div class="portfolio-caption">
+                  <h4 class="wow animate__animated animate__fadeInUp">Cityscape</h4>
+                  <p class="wow animate__animated animate__fadeInUp">Photography</p>
               </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Wild Visions</h4>
-            <p class="text-muted">Photography</p>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpeg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Digital Dynamos</h4>
-            <p class="text-muted">Web Development</p>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
@@ -163,7 +167,7 @@
         <div class="col-md-6">
           <h3>Get in Touch</h3>
           <p>Feel free to drop me a line via email or connect with me on social media.</p>
-          <form id="contact-form" method="post" action="#">
+          <form id="contact-form" method="post" action="send-message.php">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Your Name" name="name" required>
             </div>
@@ -180,109 +184,113 @@
         <div class="col-md-6">
           <h3>Contact Details</h3>
           <ul class="list-unstyled">
-            <li><i class="fas fa-envelope"></i> <a href="mailto:info@pnc.com">info@pnc.com</a></li>
-            <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Suite 200, New York, NY 10001</li>
+            <li><i class="fas fa-envelope"></i> <a class="email" href="mailto:info@pnc.com">balsomojoy07@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> +639 913 411 690</li>
+            <li><i class="fas fa-map-marker-alt"></i> Southville 1, Banay-Banay Cabuyao City of Laguna</li>
           </ul>
           <div class="mapouter">
-            <div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=new%20york%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/maps/83"></a></div>
+            <div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.891992742905!2d121.13128317456717!3d14.25952068533735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d88258da3383%3A0x3db6c2402700f58f!2sPamantasan%20ng%20Cabuyao!5e0!3m2!1sen!2sph!4v1684554254873!5m2!1sen!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script>
-  $(document).ready(function() {
-    // Send message via AJAX
-    $('#contact-form').submit(function(e) {
-      e.preventDefault();
-      $.ajax({
-        type: 'POST',
-        url: 'send-message.php',
-        data: $(this).serialize(),
-        success: function(response) {
-          $('#message').html(response).fadeIn();
-        },
-        error: function(response) {
-          $('#message').html(response).fadeIn();
-        }
-      });
-    });
-  });
-  </script>
 
   <!-- Footer Section -->
-  <footer class="bg-light text-center text-lg-start">
-      <div class="container p-4">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Company Bio</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-              aliquam voluptatem veniam, est atque cumque eum delectus sint!
-            </p>
-          </div>
-      
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-      
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-dark">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 4</a>
-              </li>
-            </ul>
-          </div>
-      
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Links</h5>
-      
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-dark">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 4</a>
-              </li>
-            </ul>
+  <footer class="bio text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">PixelPulse</h5>
+        <p>
+          Pixel Pulse is a web development company founded by Joy Balsomo, a passionate 3rd year BSIT student. We create stunning and functional websites, helping businesses and individuals achieve their online goals through innovative design.
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Sitemap</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Connect</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://www.facebook.com/joyie.patootie" class="text-dark"><i class="fab fa-facebook">  Joy Balsomo</i></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@shanaiah_luna?_t=8c4lgRbRaM5&_r=1"><i class="fab fa-tiktok">   Shanaiah_Luna</i></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/imjoyiiieee?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram">   imjoyiiieee</i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section text-center p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="logo">
+            <img src="logo.png" width="150px" height="60px" alt="Pixel Pulse Logo">
           </div>
         </div>
+        <div class="col-md-4">
+          <a class="legal text-dark" href="#">Copyright Notice</a>
+          |
+          <a class="legal text-dark" href="#">Privacy Policy</a>
+          |
+          <a class="legal text-dark" href="#">Sitemap</a>
+          <br />
+          <small class="text-muted">
+            © 2023 Your Company. All Rights Reserved.
+          </small>
+        </div>
       </div>
-      
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <a class="text-dark" href="#">Privacy Policy</a>
-        |
-        <a class="text-dark" href="#">Terms & Conditions</a>
-        |
-        <a class="text-dark" href="#">Contact</a>
-        <br />
-        <small class="text-muted">
-          © 2023 Your Company. All Rights Reserved.
-        </small>
-      </div>
-  </footer>
+    </div>
+  </div>
+</footer>
+   <script>
+    new WOW().init();
+  </script>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.3.1/dist/simpleParallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize WOW.js for animations
+            new WOW().init();
+
+            // Add waypoint for each section
+            $('.animated').each(function() {
+                var waypoint = new Waypoint({
+                    element: this,
+                    handler: function(direction) {
+                        if (direction === 'down') {
+                            $(this.element).addClass('animate__fadeIn');
+                        }
+                    },
+                    offset: '80%'
+                });
+            });
+        });
+    </script>
+
 
   </body>
-  </html>        
+  </html>       
