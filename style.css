@@ -19,7 +19,7 @@ body {
 }
   
 
-/*HEADER SECTION*/
+/*HEADER*/
 header.header-section {
     background-image: url(img/bg-header.jpg);
     background-position: center center;
@@ -34,6 +34,12 @@ header.header-section {
     color: #000;
     text-align: center;
     font-family: cursive;
+}
+
+.header-section h1{
+    float: right;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 .navbar-custom {
@@ -83,17 +89,33 @@ header.header-section {
 }
 
 .tagline {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 20px;
+    float: right;
 }
+
+.navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.navbar-visible {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+
 /*Font Family*/
+.header-section h1,
 .about-me-section,
 .portfolio-section .text-center,
-.contact-section h2 {
+.contact-section h2,
+.footer-section,
+.bio h5 {
     font-family: Georgia, serif;
 }
 
-/*ABOUT ME SECTION*/
+/*ABOUT ME*/
 .about-me-section {
     padding: 80px 0 220px;
 }
@@ -108,7 +130,7 @@ header.header-section {
 }
 
 .row p {
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 18px;
 }
 
@@ -118,7 +140,7 @@ header.header-section {
 }
 
 .portfolio-item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .portfolio-link:hover {
@@ -153,15 +175,30 @@ header.header-section {
 
 .portfolio-caption p {
     margin-top: 10px;
+    color: #d0d0d0;
+    font-weight: 900;
 }
 
 .portfolio-hover i {
-    color: #30170c;
+    color: #1b1b1b;
 }
 
 .portfolio-hover i:hover {
     color: #7c3b1e;
     transition: 0.3s ease-in-out;
+}
+
+.portfolio-section .video-container {
+    height: 100px;
+    overflow: hidden;
+}
+
+.portfolio-section .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*CONTACT*/
@@ -175,10 +212,48 @@ header.header-section {
     align-items: center;
 }
 
-.contact-section h3 {
+.contact-section h3{
     font-family: 'Lucida Sans', sans-serif;
     font-weight: 100;
+    color: #000000;
 }
+
+.contact-section h2{
+    color: #222527;
+}
+
+.contact-section .btn {
+    margin-top: 20px;
+    background-color: #757575;
+    border-color: #757575;
+}
+
+.contact-section .btn:hover {
+    background-color: #c0c0c0;
+    border-color: #c0c0c0;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-section .form-group {
+    margin-top: 5px;
+}
+
+.contact-section .email {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-section i{
+    color: #4f575b;
+}
+
+.form-control:focus,
+.contact-section .btn:focus {
+    border-color: #30170c;
+    box-shadow: 0 0 0 0.2rem rgb(48, 23, 12, 0.25);
+  }
+
 /* add media queries for responsive design */
 @media only screen and (max-width: 767px) {
     header.header-section {
@@ -202,4 +277,39 @@ header.header-section {
     .nav-link {
         padding: 10px;
     }
+}
+
+/*FOOTER*/
+.footer-section{
+    background-color: #3a3a3a;
+    color: #fff !important;
+}
+
+.footer-section a {
+    color: #fff !important;
+}
+
+.footer-section img {
+    position: absolute;
+    left: 350px;
+}
+
+.bio {
+  background-image: url('img/footer.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bio p {
+    color: #1e2122;
+}
+
+.list-unstyled a,
+.list-unstyled i {
+    color: #1b1b1b;
+}
+
+.list-unstyled a:hover,
+.list-unstyled i:hover {
+    color: #7c3b1e;
+    transition: 0.3s ease-in-out;
 }
